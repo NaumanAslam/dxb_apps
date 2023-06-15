@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		EA42CA252A3B1006008F3131 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA42CA242A3B1006008F3131 /* AppDelegate.swift */; };
 		EA42CA272A3B1006008F3131 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA42CA262A3B1006008F3131 /* SceneDelegate.swift */; };
-		EA42CA292A3B1006008F3131 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA42CA282A3B1006008F3131 /* ViewController.swift */; };
 		EA42CA2C2A3B1006008F3131 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA42CA2A2A3B1006008F3131 /* Main.storyboard */; };
 		EA42CA2E2A3B1007008F3131 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA42CA2D2A3B1007008F3131 /* Assets.xcassets */; };
 		EA42CA312A3B1007008F3131 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA42CA2F2A3B1007008F3131 /* LaunchScreen.storyboard */; };
+		EA42CA3B2A3B1F9E008F3131 /* UIViewController+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA42CA392A3B1F9E008F3131 /* UIViewController+extensions.swift */; };
+		EA42CA3C2A3B1F9E008F3131 /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA42CA3A2A3B1F9E008F3131 /* extensions.swift */; };
+		EA42CA3E2A3B204F008F3131 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA42CA3D2A3B204F008F3131 /* HomeViewController.swift */; };
+		EA42CA402A3B2781008F3131 /* MyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA42CA3F2A3B2781008F3131 /* MyTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EA42CA212A3B1006008F3131 /* DXB_Apps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DXB_Apps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA42CA242A3B1006008F3131 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA42CA262A3B1006008F3131 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EA42CA282A3B1006008F3131 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EA42CA2B2A3B1006008F3131 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EA42CA2D2A3B1007008F3131 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA42CA302A3B1007008F3131 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA42CA322A3B1007008F3131 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA42CA392A3B1F9E008F3131 /* UIViewController+extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+extensions.swift"; sourceTree = "<group>"; };
+		EA42CA3A2A3B1F9E008F3131 /* extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
+		EA42CA3D2A3B204F008F3131 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		EA42CA3F2A3B2781008F3131 /* MyTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,50 @@
 		EA42CA232A3B1006008F3131 /* DXB_Apps */ = {
 			isa = PBXGroup;
 			children = (
-				EA42CA242A3B1006008F3131 /* AppDelegate.swift */,
-				EA42CA262A3B1006008F3131 /* SceneDelegate.swift */,
-				EA42CA282A3B1006008F3131 /* ViewController.swift */,
-				EA42CA2A2A3B1006008F3131 /* Main.storyboard */,
-				EA42CA2D2A3B1007008F3131 /* Assets.xcassets */,
-				EA42CA2F2A3B1007008F3131 /* LaunchScreen.storyboard */,
 				EA42CA322A3B1007008F3131 /* Info.plist */,
+				EA42CA432A3B79EE008F3131 /* Views */,
+				EA42CA422A3B79E1008F3131 /* Controllers */,
+				EA42CA412A3B7984008F3131 /* Utilities */,
+				EA42CA382A3B1F9E008F3131 /* Extensions */,
 			);
 			path = DXB_Apps;
+			sourceTree = "<group>";
+		};
+		EA42CA382A3B1F9E008F3131 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EA42CA392A3B1F9E008F3131 /* UIViewController+extensions.swift */,
+				EA42CA3A2A3B1F9E008F3131 /* extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EA42CA412A3B7984008F3131 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				EA42CA2D2A3B1007008F3131 /* Assets.xcassets */,
+				EA42CA242A3B1006008F3131 /* AppDelegate.swift */,
+				EA42CA262A3B1006008F3131 /* SceneDelegate.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		EA42CA422A3B79E1008F3131 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EA42CA3D2A3B204F008F3131 /* HomeViewController.swift */,
+				EA42CA3F2A3B2781008F3131 /* MyTabBarController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		EA42CA432A3B79EE008F3131 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EA42CA2A2A3B1006008F3131 /* Main.storyboard */,
+				EA42CA2F2A3B1007008F3131 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +179,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA42CA292A3B1006008F3131 /* ViewController.swift in Sources */,
+				EA42CA3C2A3B1F9E008F3131 /* extensions.swift in Sources */,
+				EA42CA3B2A3B1F9E008F3131 /* UIViewController+extensions.swift in Sources */,
 				EA42CA252A3B1006008F3131 /* AppDelegate.swift in Sources */,
 				EA42CA272A3B1006008F3131 /* SceneDelegate.swift in Sources */,
+				EA42CA3E2A3B204F008F3131 /* HomeViewController.swift in Sources */,
+				EA42CA402A3B2781008F3131 /* MyTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

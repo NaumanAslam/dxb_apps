@@ -30,10 +30,11 @@ class MyTabBarController: UITabBarController {
      }
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        
+        viewNewOrder.frame = CGRect.init(x: self.tabBar.center.x - 35, y: self.tabBar.center.y - 50, width: 70, height: 70)
+
          // safe place to set the frame of button manually
-        viewNewOrder.frame = CGRect.init(x: self.tabBar.center.x - 35, y: self.tabBar.frame.minY - 25, width: 70, height: 70)
     }
+    
     func initViews(){
         self.tabBar.unselectedItemTintColor = self.standardUnselectedColor()
 
